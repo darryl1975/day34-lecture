@@ -14,6 +14,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [],
@@ -32,7 +33,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatCheckboxModule,
     MatSlideToggleModule,
     MatNativeDateModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatDialogModule
   ],
   exports: [
     CommonModule,
@@ -49,7 +51,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatCheckboxModule,
     MatSlideToggleModule,
     MatNativeDateModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatDialogModule
   ],
 })
 export class MaterialModule { }

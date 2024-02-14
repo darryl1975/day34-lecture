@@ -42,6 +42,10 @@ export class AppComponent {
     });
   }
 
+  editEmployee(data: any) {
+
+  }
+  
   deleteEmployee(id: number) {
     this.employeeService.deleteEmployee(id).subscribe({
       next: (result) => {
