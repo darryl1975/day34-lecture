@@ -7,7 +7,7 @@ import { EmployeeService } from '../employee.service';
   templateUrl: './employee-list.component.html',
   styleUrls: ['./employee-list.component.css']
 })
-export class EmployeeListComponent implements OnInit{
+export class EmployeeListComponent implements OnInit {
   displayColumns: string[] = [
     'id',
     'firstName',
@@ -26,7 +26,18 @@ export class EmployeeListComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.fetchEmployeeData();
   }
 
+  fetchEmployeeData() {
+    this.employeeService.getEmployees().subscribe({
+      next: (data) => {
+        this.dataSource = new MatTableDataSource<any>(data);
+
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
+  }
 }
