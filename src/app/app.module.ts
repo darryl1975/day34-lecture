@@ -10,12 +10,14 @@ import { MaterialModule } from './material/material.module';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeAddEditComponent } from './employee-add-edit/employee-add-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NewslistComponent } from './newslist/newslist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
-    EmployeeAddEditComponent
+    EmployeeAddEditComponent,
+    NewslistComponent
   ],
   imports: [
     BrowserModule,
