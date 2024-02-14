@@ -36,5 +36,22 @@
       "gender": "F",
       "salary": 10000
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Test Post 01",
+      "body": "This is test post 01"
+    },
+    {
+      "id": 2,
+      "title": "Test Post 02",
+      "body": "This is test post 02"
+    },
+    {
+      "id": 3,
+      "title": "Test Post 03",
+      "body": "This is test post 03"
+    }
   ]
 }

@@ -11,13 +11,15 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeAddEditComponent } from './employee-add-edit/employee-add-edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewslistComponent } from './newslist/newslist.component';
+import { PostListComponent } from './post/post-list/post-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeListComponent,
     EmployeeAddEditComponent,
-    NewslistComponent
+    NewslistComponent,
+    PostListComponent
   ],
   imports: [
     BrowserModule,
