@@ -39,5 +39,12 @@
             <input matInput type="number" placeholder="Enter your salary" formControlName="salary">
         </mat-form-field>
     </div>
+
+    <div mat-dialog-actions class="action-button">
+        <button style="margin: 10px; " mat-raised-button color="secondary" type="submit">
+            {{ data ? 'Update' : 'Save'}}
+        </button>
+        <button mat-raised-button type="button" color="danger" [mat-dialog-close]="false">Cancel</button>
+    </div>
 </form>
 

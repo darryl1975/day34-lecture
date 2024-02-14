@@ -15,6 +15,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatDialogModule} from '@angular/material/dialog';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [],
@@ -34,7 +35,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatSlideToggleModule,
     MatNativeDateModule,
     MatPaginatorModule,
-    MatDialogModule
+    MatDialogModule,
+    MatToolbarModule
   ],
   exports: [
     CommonModule,
@@ -52,7 +54,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatSlideToggleModule,
     MatNativeDateModule,
     MatPaginatorModule,
-    MatDialogModule
+    MatDialogModule,
+    MatToolbarModule
   ],
 })
 export class MaterialModule { }

@@ -1,5 +1,8 @@
 <router-outlet></router-outlet>
 
+<mat-toolbar color="primary">
+  <button mat-raised-button color="accent" (click)="openAddNewEmployeeDialog()">Add</button>
+</mat-toolbar>
 <div class="mat-elevation-z8">
   <table mat-table [dataSource]="dataSource">
 
@@ -54,5 +57,5 @@
     <tr mat-row *matRowDef="let employee; columns: displayColumns"></tr>
   </table>
 
-  <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  <mat-paginator [pageSizeOptions]="[1, 2, 5]" showFirstLastButtons></mat-paginator>
 </div>
