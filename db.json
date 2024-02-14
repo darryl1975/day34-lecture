@@ -1,0 +1,22 @@
+{
+    "employees" : [
+        {
+            "id": 12345,
+            "firstName": "Darryl",
+            "lastName": "Ng",
+            "email": "darrylng@nus.edu.sg",
+            "dob": "1975-12-12T03:45:00Z",
+            "gender": "M",
+            "salary": 20000
+        },
+        {
+            "id": 12346,
+            "firstName": "Mark",
+            "lastName": "Zul",
+            "email": "mark@nus.edu.sg",
+            "dob": "1977-07-07T03:45:00Z",
+            "gender": "M",
+            "salary": 50000
+        }
+    ]
+}
