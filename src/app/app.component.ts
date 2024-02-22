@@ -30,8 +30,8 @@ export class AppComponent {
   paginator!: MatPaginator;
 
   // MatPaginator Inputs
-  // length = 1;
-  // pageSize = 10;
+  length = 5;
+  pageSize = 2;
 
   constructor(private employeeService: EmployeeService,
     public dialog: MatDialog) {
@@ -47,7 +47,7 @@ export class AppComponent {
     this.employeeService.getEmployees().subscribe({
       next: (data) => {
         this.dataSource = new MatTableDataSource<any>(data);
-
+        this.dataSource.paginator = this.paginator;
       },
       error: (err) => {
         console.log(err);
